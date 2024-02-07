@@ -1,0 +1,166 @@
+/*
+# Front-end Style Guide
+
+### Notes
+
+Use transparency to get the colour variations necessary to match the design. Hint: look into using `hsla()`.
+
+## Typography
+
+
+*/
+:root{
+    /*Primary*/
+
+    --Lightred: hsl(0, 100%, 67%);
+    --Orangey_yellow: hsl(39, 100%, 56%);
+    --Green_teal: hsl(166, 100%, 37%);
+    --Cobalt_blue: hsl(234, 85%, 45%);
+
+    /*Gradients*/
+
+    --Light_slate_blue: hsl(252, 100%, 67%); /* (background)*/
+    --Light_royal_blue: hsl(241, 81%, 54%);/* (background)*/
+    --Violet_blue: hsla(256, 72%, 46%, 1);/* (circle)*/
+    --Persian_blue: hsla(241, 72%, 46%, 0);/* (circle)*/
+
+    /* Neutral*/
+    --White: hsl(0, 0%, 100%);
+    --Pale_blue: hsl(221, 100%, 96%);
+    --Light_lavender: hsl(241, 100%, 89%);
+    --Dark_gray_blue: hsl(224, 30%, 27%);
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    max-width: 1440px;
+    font-family: 'Hanken Grotesk', sans-serif;
+    display: grid;
+    place-items: center;
+    background: var(--White);
+}
+p{
+    font-size:18px ;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1200px;
+    margin-block: 2rem;
+    border-radius: 1em;
+    gap: 1rem;
+    box-shadow: 0px 10px 25px 0px var(--Pale_blue);
+
+}
+.card__component{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: clamp(45rem, calc(40rem + 2vw), 45rem);
+    justify-content: center;
+    align-items: center;
+    border-radius: 1em;
+    
+   
+}
+
+.progress__container{
+    display: flex;
+    width:fit-content;
+    height: 100%;
+    object-fit: cover;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin: none;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(0deg, var(--Light_royal_blue) 0%,  var(--Light_slate_blue) 100%);
+    border-radius: 1em;
+
+    
+}
+
+.progress__container h3{
+    color: var(--Light_lavender);
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+}
+.progress__number{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    background:linear-gradient(0deg, var(--Persian_blue) 0%,  var(--Violet_blue) 100%) ;
+}
+.progress__container h1{
+    color: var(--White);
+    text-align: center;
+    padding-top: 3rem;
+    font-size:4rem;
+}
+
+.progress__container h2{
+    color: var(--White);
+    padding: 2rem;
+}
+
+.progress__container p{
+    color: var(--Light_lavender);
+    text-align: center;
+    padding: 0 1rem 3rem 1rem;
+}
+
+.summary__container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.summary__container h3{
+    justify-self: flex-start;
+    
+}
+.result__list{
+    display: flex;
+    max-width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--Cobalt_blue);
+    
+}
+li{
+    display: flex;
+    justify-content: space-around;
+    border-radius: 1em;
+    padding: 0.5rem;
+    max-width: 100%;
+}
+.reaction{
+    background: var(--Lightred);
+    width: 100%;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+.reaction .score{
+    justify-self: right;
+    align-self: flex-end;
+}
+.btn{
+    display: flex;
+
+}
