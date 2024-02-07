@@ -257,7 +257,12 @@ span{
     .btn{
         margin-top: 1rem;
     }
-    
+        
+}
+@media screen and (max-width:960px) {
+    .container{
+        max-width: 100%;
+        
+    }
 
-    
 }
