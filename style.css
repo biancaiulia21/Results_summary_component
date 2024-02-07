@@ -1,14 +1,4 @@
-/*
-# Front-end Style Guide
 
-### Notes
-
-Use transparency to get the colour variations necessary to match the design. Hint: look into using `hsla()`.
-
-## Typography
-
-
-*/
 :root{
     /*Primary*/
 
@@ -125,42 +115,150 @@ p{
     flex-wrap: nowrap;
     padding-left: 2rem;
     padding-right: 2rem;
+    height: 100%;
+    padding-top: 1.5rem;
 }
 
 .summary__container h3{
     justify-self: flex-start;
+    color: var(--Dark_gray_blue);
+    padding-bottom: 1.5rem;
     
 }
 .result__list{
     display: flex;
     max-width: 100%;
+    width: 100%;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    background: var(--Cobalt_blue);
-    
+    align-items: center; 
+    gap: 1rem;
+    padding-bottom: 1rem; 
 }
-li{
-    display: flex;
-    justify-content: space-around;
+.template__sum{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     border-radius: 1em;
-    padding: 0.5rem;
-    max-width: 100%;
-}
-.reaction{
-    background: var(--Lightred);
+    padding: 1rem;border-radius: 1em;
+    padding: 1rem;
     width: 100%;
-    padding: 0.5rem;
+}
+.flex__text{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    gap: 1rem;
+
+}
+.score{
+    display: flex;
+    justify-self: flex-end;
+    color: var(--Dark_gray_blue);
     
 }
-.reaction .score{
-    justify-self: right;
-    align-self: flex-end;
+span{
+    color: hsla(224, 30%, 27%, 0.5)
 }
+
+.reaction{    
+    background-color: hsla(0, 100%, 67%, 0.05); 
+}
+.reaction__text{
+    color: var(--Lightred);
+}
+.memory{
+    background-color: hsla(39, 100%, 56%, 0.05);
+}
+.memory__text{
+    color: var(--Orangey_yellow);
+}
+.verbal{
+    background-color: hsla(166, 100%, 37%, 0.05);
+}
+.verbal__text{
+    color: var(--Green_teal);
+}
+.visual{
+    background-color: hsla(234, 85%, 45%, 0.05);
+}
+.visual__text{
+    color: var(--Cobalt_blue);
+}
+
 .btn{
     display: flex;
+    border-radius: 2em;
+    padding: 1rem;
+    margin-top: 2rem;
+    background: var(--Dark_gray_blue);
+    justify-content:center ;
+    align-items: center;
+    color: var(--White);
+    border: none;
 
+}
+.btn:hover{
+    background: linear-gradient(0deg, var(--Light_royal_blue) 0%,  var(--Light_slate_blue) 100%);
+    border: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width:375px) {
+    .container{
+        max-width: 100%;
+        height: 100%;
+        display: block;
+        border-radius: 0;
+        padding: 0;
+        margin-block: none;
+        gap: 0rem;
+        
+        
+    }
+    .card__component{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        width: fit-content;
+        height: max-content;
+        padding: 0;
+        margin: none;
+        
+    }
+    .progress__container{
+        display: flex;
+        flex-direction: column;
+        border-radius: 0 0 1em 1em;
+        height: 50%;        
+    }
+    .progress__number{
+        width: 150px;
+        height: 150px;
+    }
+    .progress__container{
+        padding: 0;
+    }
+    .progress__container h2{
+        padding: 1rem;
+    }
+    .progress__container h3{
+        padding: 1rem;
+    }
+
+    .summary__container{
+        padding: 1.5rem;
+        margin: none;
+        width: 100%;
+        height: auto;
+        padding-bottom: 2rem;
+    }
+    .result__list{
+        padding-bottom: 0;
+        
+    }
+    .btn{
+        margin-top: 1rem;
+    }
+    
+
+    
 }
