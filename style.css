@@ -27,6 +27,7 @@
 }
 body{
     max-width: 1440px;
+    height: 100vh;
     font-family: 'Hanken Grotesk', sans-serif;
     display: flex;
     flex-direction: column;
