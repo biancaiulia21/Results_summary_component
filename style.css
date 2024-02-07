@@ -28,9 +28,11 @@
 body{
     max-width: 1440px;
     font-family: 'Hanken Grotesk', sans-serif;
-    display: grid;
-    place-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     background: var(--White);
+    align-items: center;
 }
 p{
     font-size:18px ;
@@ -52,6 +54,7 @@ p{
     width: clamp(45rem, calc(40rem + 2vw), 45rem);
     justify-content: center;
     align-items: center;
+    position: relative;
     border-radius: 1em;
     
    
